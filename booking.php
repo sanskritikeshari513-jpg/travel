@@ -521,7 +521,7 @@ html {
         async function getLiveWeather() {
             let cityName = "<?php echo $cityName; ?>";
             let queryCity = cityName.split(' ')[0].split('-')[0].trim();
-            const weatherApiKey = "1a2e734fe80c78f2c35a64c117613466"; 
+            const weatherApiKey = ""; 
             const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(queryCity)},IN&units=metric&appid=${weatherApiKey}`;
             
             try {
